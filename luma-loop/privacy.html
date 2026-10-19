@@ -44,18 +44,18 @@
     <h2>Dữ liệu lưu trên thiết bị</h2>
     <ul>
       <li>Điểm cao nhất (best score).</li>
-      <li>Ngôn ngữ bạn chọn trong ứng dụng.</li>
+      <li>Các tùy chọn trong ứng dụng: ngôn ngữ, bật/tắt âm thanh và, ở phiên bản có các tính năng này, nhân vật đang chọn, bối cảnh Ngày/Đêm và bật/tắt rung.</li>
     </ul>
-    <p>Hai dữ liệu này chỉ lưu trên thiết bị của bạn; ứng dụng không gửi chúng tới máy chủ nào do nhà phát triển vận hành. Riêng điểm của mỗi lượt chơi có thể được gửi lên Apple Game Center khi bạn đã đăng nhập — xem mục Game Center bên dưới.</p>
-    <p class="lang"><strong>On your device:</strong> your best score and your chosen app language are stored only on your device; the app does not send them to any server operated by the developer. Separately, the score of each run may be submitted to Apple Game Center when you are signed in — see the Game Center section below.</p>
+    <p>Các dữ liệu này chỉ lưu trên thiết bị của bạn; ứng dụng không gửi chúng tới máy chủ nào do nhà phát triển vận hành. Nhân vật được mở khóa dựa trên điểm cao nhất lưu trên máy. Riêng điểm của mỗi lượt chơi có thể được gửi lên Apple Game Center khi bạn đã đăng nhập — xem mục Game Center bên dưới.</p>
+    <p class="lang"><strong>On your device:</strong> your best score and your in-app preferences (language, sound on/off and, in versions that include them, selected character, Day/Night world and haptics on/off) are stored only on your device; the app does not send them to any server operated by the developer. Characters unlock based on the best score stored on your device. Separately, the score of each run may be submitted to Apple Game Center when you are signed in — see the Game Center section below.</p>
   </section>
 
   <section class="card">
     <h2>Bảng xếp hạng Apple Game Center</h2>
     <p>Ứng dụng có bảng xếp hạng trực tuyến dùng Apple Game Center. Khi tính năng này được bật, lúc mở ứng dụng iOS có thể hiện màn hình đăng nhập Game Center của Apple nếu bạn chưa đăng nhập.</p>
     <p>Nếu bạn đã đăng nhập Game Center, sau mỗi lượt chơi kết thúc có điểm lớn hơn 0, ứng dụng <strong>tự động gửi điểm</strong> đó lên bảng xếp hạng Game Center của Apple, gắn với hồ sơ Game Center của bạn (ví dụ biệt danh). Người chơi khác và nhà phát triển có thể thấy điểm và biệt danh đó trên bảng xếp hạng. Theo tài liệu &ldquo;Manage scores and players&rdquo; của Apple, với bảng xếp hạng đang hoạt động (Live), nhà phát triển cũng có thể xem và quản lý (ví dụ gỡ) điểm và người chơi trên bảng xếp hạng qua App Store Connect.</p>
-    <p>Nếu bạn hủy đăng nhập hoặc Game Center không khả dụng, bạn vẫn chơi bình thường; điểm không được gửi lên và điểm cao nhất vẫn lưu trên máy. Việc đăng nhập và hồ sơ Game Center do Apple quản lý theo chính sách quyền riêng tư của Apple; bạn quản lý Game Center trong Cài đặt của iOS.</p>
-    <p class="lang"><strong>Apple Game Center:</strong> the app has an online leaderboard using Apple Game Center. When this feature is enabled, iOS may show Apple's Game Center sign-in screen when you open the app if you are not signed in. If you are signed in to Game Center, after each finished run with a score above 0 the app <strong>automatically submits</strong> that score to Apple's Game Center leaderboard together with your Game Center profile (for example your nickname). Other players and the developer can see that score and nickname on the leaderboard. According to Apple&rsquo;s &ldquo;Manage scores and players&rdquo; documentation, for a Live leaderboard the developer can also view and manage (for example remove) leaderboard scores and players in App Store Connect. If you cancel sign-in or Game Center is unavailable, you can still play normally; scores are not submitted and your best score stays on your device. Sign-in and your Game Center profile are handled by Apple under Apple's privacy policy; you can manage Game Center in iOS Settings.</p>
+    <p>Nếu bạn rời ván đang chơi dở để về sảnh, điểm của ván đó không được gửi. Nếu bạn hủy đăng nhập hoặc Game Center không khả dụng, bạn vẫn chơi bình thường; điểm không được gửi lên và điểm cao nhất vẫn lưu trên máy. Việc đăng nhập và hồ sơ Game Center do Apple quản lý theo chính sách quyền riêng tư của Apple; bạn quản lý Game Center trong Cài đặt của iOS.</p>
+    <p class="lang"><strong>Apple Game Center:</strong> the app has an online leaderboard using Apple Game Center. When this feature is enabled, iOS may show Apple's Game Center sign-in screen when you open the app if you are not signed in. If you are signed in to Game Center, after each finished run with a score above 0 the app <strong>automatically submits</strong> that score to Apple's Game Center leaderboard together with your Game Center profile (for example your nickname). Other players and the developer can see that score and nickname on the leaderboard. According to Apple&rsquo;s &ldquo;Manage scores and players&rdquo; documentation, for a Live leaderboard the developer can also view and manage (for example remove) leaderboard scores and players in App Store Connect. If you leave an unfinished run to return to the lobby, that run's score is not submitted. If you cancel sign-in or Game Center is unavailable, you can still play normally; scores are not submitted and your best score stays on your device. Sign-in and your Game Center profile are handled by Apple under Apple's privacy policy; you can manage Game Center in iOS Settings.</p>
   </section>
 
   <section class="card">
@@ -67,11 +67,11 @@
   <section class="card">
     <h2>Lưu giữ và xóa dữ liệu</h2>
     <ul>
-      <li>Chọn <strong>Xóa ứng dụng (Delete App)</strong> sẽ xóa điểm cao nhất và ngôn ngữ đã lưu trên thiết bị đó. <strong>Gỡ bỏ ứng dụng (Offload App)</strong> có thể giữ lại dữ liệu.</li>
+      <li>Chọn <strong>Xóa ứng dụng (Delete App)</strong> sẽ xóa điểm cao nhất và các tùy chọn đã lưu trên thiết bị đó. <strong>Gỡ bỏ ứng dụng (Offload App)</strong> có thể giữ lại dữ liệu.</li>
       <li>Bản sao lưu iOS (iCloud hoặc máy tính), nếu có, do bạn quản lý; xóa ứng dụng không tự xóa bản sao lưu.</li>
       <li>Điểm đã gửi lên Game Center do Apple lưu trữ. Để yêu cầu về dữ liệu Game Center, dùng các công cụ quyền riêng tư của Apple hoặc liên hệ nhà phát triển qua email bên dưới.</li>
     </ul>
-    <p class="lang"><strong>Retention &amp; deletion:</strong> choosing <strong>Delete App</strong> removes the stored best score and language from that device (<strong>Offload App</strong> may keep data). iOS backups, if any, are managed by you and are not removed by deleting the app. Scores submitted to Game Center are stored by Apple; for Game Center data requests use Apple's privacy tools or contact the developer by email below.</p>
+    <p class="lang"><strong>Retention &amp; deletion:</strong> choosing <strong>Delete App</strong> removes the stored best score and preferences from that device (<strong>Offload App</strong> may keep data). iOS backups, if any, are managed by you and are not removed by deleting the app. Scores submitted to Game Center are stored by Apple; for Game Center data requests use Apple's privacy tools or contact the developer by email below.</p>
   </section>
 
   <section class="card">
